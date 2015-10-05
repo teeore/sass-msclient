@@ -1,0 +1,75 @@
+#packages {
+    height: 100%;
+    width: 100%;
+    &-left-col {
+        padding-top: 80px;
+        padding-left: 12px;
+        position: absolute;
+        overflow: auto;
+        min-height: 250px;
+    }
+}
+
+ul.package-details {
+    list-style-type: none;
+    margin-left: 152px;
+    width: 1000px;
+    li {
+        float: left;
+        padding-right: 30px;
+    }
+}
+
+.package-filters {
+    padding-top: 22px;
+    overflow: auto;
+}
+
+.package-body {
+    width: 90%;
+}
+
+ul.table-filter {
+    float: left;
+    width: 140px;
+    list-style-type: none;
+    line-height: 2em;
+    li {
+        padding-left: 18px;
+        padding-bottom: 6px;
+        a {
+            font-size: 15px;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.pkg-table {
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    min-width: 780px;
+    padding-bottom: 5%;
+    margin-top: 57px;
+    // height: 700px;
+    height: 94%;
+}
+
+.trash-icon {
+    background: transparent url('../images/trash-icon.png') no-repeat top center;
+    width: 12px;
+    height: 15px;
+    display: block;
+    cursor: pointer;
+    // padding: 8px;
+    &:hover {
+        background: transparent url('../images/trash-icon-over.png') no-repeat top center;
+        // border: 1px solid #ccc;
+    }
+    &-cell {
+        width: 20%;
+    }
+}

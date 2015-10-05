@@ -1,0 +1,222 @@
+.assets-container {
+    width: 86%;
+    float: left;
+    height: 100%;
+    // min-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+}
+
+.assets-container-wide {
+    width: 75%;
+    margin-left: 41px;
+    // min-height: 600px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+    .progress-bar-wrapper {
+        width: 20%;
+    }
+}
+
+.assets {
+    margin-top: 13px;
+    height: 87%;
+    // padding-bottom: 50px;
+    &-icon {
+        width: 15px;
+        margin-right: 4px;
+    }
+}
+
+img#add-asset {
+    margin-right: 21px;
+}
+
+.arrow-wrapper {
+    width: 30px;
+    height: 102%;
+    min-height: 600px;
+    background: #ccc;
+    float: left;
+    margin-top: -16px;
+    margin-left: -10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.assets-arrow {
+    margin: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 32px;
+    padding-top: 200px;
+    &-left {
+        background: url('../images/left-arrow.png') no-repeat;
+        background-position: 0 70%;
+    }
+    &-right {
+        background: url('../images/right-arrow.png') no-repeat;
+        background-position: 0 70%;
+    }
+}
+
+.file-name {
+    @extend %scdn-lists;
+    width: 63%;
+}
+
+span.file-size {
+    position: relative;
+    color: $main-color;
+}
+
+.assets-title {
+    font-size: 28px;
+    color: #A9A9A9;
+    // margin-top: 10px;
+    margin-top: -7px;
+    height: 50px;
+    span {
+        float: right;
+        padding-right: 0;
+        margin-right: -13px;
+    }
+}
+
+.assets-lists {
+    li {
+        @extend %scdn-lists;
+        padding-top: 4px;
+        padding-bottom: 0;
+        width: 100%;
+        float: left;
+        &:hover {
+            background-color: #E2E2E2;
+        }
+    }
+    .remove-btn {
+        margin-right: 13px;
+    }
+}
+
+.assets-lists-wide {
+    @extend .assets-lists;
+    span {
+        width: 20%;
+        float: right;
+    }
+}
+
+.file-list-select-drop {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    // min-height: 492px;
+    height: 100%;
+    float: left;
+    ul {
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+}
+
+.file-list-filename {
+    float: left;
+    width: 100%;
+}
+
+.file-list-filebutton {
+    float: right;
+    width: 2%;
+}
+
+span.file-list-fileprogress {
+    height: 12px;
+    background: #5FA8DD;
+    width: 0px;
+    float: left;
+    margin: 1px 0 0 0;
+    display: inline-block;
+}
+
+.progress-bar-wrapper {
+    border: 1px solid #444;
+    width: 22%;
+    height: 16px;
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    background-color: #FFF;
+}
+
+.cover-drag-drop > div.image-select-drop {
+    width: 100px;
+    height: 100px;
+    color: #ccc;
+    @include border-radius(3px);
+    border: $light-gray;
+    cursor: pointer;
+    float: left;
+    margin-right: 5px;
+    background-color: #FFF;
+    span {
+        padding-top: 20px;
+        display: inline-block;
+        text-align: center;
+        font-size: 80%;
+    }
+    p {
+        padding-top: 31%;
+        padding-left: 1%;
+        text-align: center;
+    }
+}
+
+.select-asset-img {
+    display: inline;
+}
+
+img.image-select-drop {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.drop-msg {
+    color: #ccc;
+}
+
+.image-select-drop-progress {
+    height: 1px;
+    background: green;
+    width: 0px;
+}
+
+.image-select-drop-progress-container {
+    margin-top: 5px;
+    width: 90px;
+}
+
+.image-select-drop.dragover,
+.file-list-select-drop.dragover {
+    border: 1px dashed gray;
+    background: #ddd;
+    color: #ccc;
+}
+
+.image-select-drop.dragover-err,
+.file-list-select-drop.dragover-err {
+    border: 1px dashed red;
+}
+
+.removeAssetBtn {
+    cursor: pointer;
+}
+
+.file-list-lineitem:hover .removeAssetBtn {
+    display: inline;
+}

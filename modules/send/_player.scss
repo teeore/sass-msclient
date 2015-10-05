@@ -1,0 +1,14 @@
+.player {
+    &-container {
+        float: right;
+        background-color: #000;
+        height: 100%;
+        width: 20%;
+        margin-top: -16px;
+    }
+    &-wrapper {
+        margin-top: 50px;
+        margin-left: 27%;
+        color: #ccc;
+    }
+}

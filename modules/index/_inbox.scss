@@ -1,0 +1,74 @@
+%inbox-icns {
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#inbox-table {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    min-width: 900px;
+}
+
+#inbox {
+    height: 100%;
+    margin-left: 17px;
+}
+
+.inbox {
+    &-icns {
+        background-image: url(../images/inbox-icns.png);
+        background-repeat: no-repeat;
+        display: block;
+    }
+    &-link {
+        @extend %inbox-icns;
+        width: 20px;
+        background-position: -5px -5px;
+    }
+    &-mail {
+        @extend %inbox-icns;
+        width: 25px;
+        margin-left: 11px;
+        background-position: -35px -5px;
+    }
+    &-company {
+        width: 353px;
+    }
+    &-sender {
+        width: 10%;
+    }
+    &-comp {
+        width: 10%;
+    }
+    &-url {
+        width: 25%;
+    }
+}
+
+#inbox-inner {
+    width: 450px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    input {
+        margin-bottom: 20px;
+    }
+}
+
+.tab-btns ul li a.inbox-tab-links {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 2px 5px;
+    width: 65px;
+    margin-top: 0;
+}
+
+.inbox-name {
+    li {
+        float: left;
+    }
+    input {
+        width: 353px;
+    }
+}

@@ -1,0 +1,107 @@
+@media (max-width: 1280px) {
+    #cover-art {
+        width: 99%;
+        padding-top: 143px;
+        p {
+            top: 53px;
+        }
+    }
+    .recipient-items {
+        width: 83%;
+    }
+    .image-select-drop {
+        width: 94%;
+        input {
+            width: 106%;
+        }
+    }
+    .nav-tabs {
+        li {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .arrow-wrapper {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 1340px) {
+    .tab-btns ul li a {
+        width: auto;
+        padding-right: 13px;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+    .meta-data-form {
+        width: 54%;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1700px) {
+    .meta-data-form {
+        width: 57%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .meta-data-form {
+        width: 64%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .meta-data-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .send-now {
+        margin-left: 77px;
+    }
+    .datepicker-section {
+        margin-left: 1%;
+        // width: 36%;
+   
+    }
+    .close-btn-wrapper {
+        width: 10%;
+    }
+}
+
+@media (max-width: 1800px) {
+    .list-send {
+        width: 7%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .new-btn-wrapper {
+        width: 200px;
+    }
+}
+
+@media (min-width: 100px) {
+    .form-inline .form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+}
+
+@media (min-width: 100px) {
+    .navbar-form {
+        width: auto;
+        border: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}

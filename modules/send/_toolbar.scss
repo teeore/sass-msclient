@@ -1,0 +1,166 @@
+.toolbar {
+    width: 100%;
+    float: left;
+    margin-top: 3px;
+    height: 45px;
+    border-bottom: $light-gray;
+    position: relative;
+    li {
+        padding: 0 20px 0 0;
+        float: left;
+        display: inline;
+    }
+}
+
+.cal-btn,
+.cal-input {
+    height: 32px;
+}
+
+.cal-text {
+    margin-top: 9px;
+    float: left;
+    padding-right: 12px;
+}
+
+.exp-text {
+    @extend .cal-text;
+}
+
+.list-time {
+    margin-top: -35px;
+}
+
+.date-time input {
+    border-radius: 2px;
+    padding: 6px;
+    border: 1px solid #D7D4D4;
+    margin-left: 5px;
+    font-size: 13px;
+    width: 68px !important;
+}
+
+.datepicker-section {
+    width: 32%;
+}
+
+#datepicker {
+    padding-left: 12px;
+}
+
+#cal-form {
+    margin-right: 10px;
+}
+
+.list-send {
+    width: 6%;
+    margin-right: 5%;
+}
+
+.send-now {
+    position: absolute;
+    top: 19px;
+    margin-left: 88px;
+    text-decoration: underline;
+}
+
+.options {
+    width: 19%;
+}
+
+.expiration {
+    width: 22%;
+}
+
+.options li {
+    background: url('../images/options-sprite.png') no-repeat;
+    width: 32px;
+    height: 32px;
+    border: $light-gray;
+    margin-right: 5px;
+    cursor: pointer;
+    &.d-gray {
+        background-position: 0px -42px;
+    }
+    &.d-blue {
+        background-position: 0px 0px;
+    }
+    &.f-gray {
+        background-position: -1px -126px;
+    }
+    &.f-blue {
+        background-position: -1px -84px;
+    }
+    &.l-gray {
+        background-position: -1px -210px;
+    }
+    &.l-blue {
+        background-position: -1px -168px;
+    }
+    &.w-gray {
+        background-position: 0px -294px;
+    }
+    &.w-blue {
+        background-position: 0px -252px;
+    }
+}
+
+.expiration li {
+    background: url('../images/expires-sprite.png') no-repeat;
+    width: 40px;
+    height: 32px;
+    border: $light-gray;
+    margin-right: -6px;
+    cursor: pointer;
+    &.one-blue {
+        background-position: 1px 0px;
+    }
+    &.one-gray {
+        background-position: 1px -42px;
+    }
+    &.fourteen-blue {
+        background-position: 3px -168px;
+    }
+    &.fourteen-gray {
+        background-position: 3px -210px;
+    }
+    &.five-blue {
+        background-position: 1px -84px;
+    }
+    &.five-gray {
+        background-position: 1px -126px;
+    }
+}
+
+.close-btn {
+    background: #fff url('../images/close.png') no-repeat center center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    &-wrapper {
+        // width: 8%;
+        float: right;
+        a {
+            display: inline-block;
+        }
+    }
+    &:hover {
+        background-color: #EDEDED;
+    }
+}
+
+.send-del-btn {
+    background: #fff url('../images/send-trash.png') no-repeat center center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    &-wrapper {
+        width: 5%;
+        float: right;
+    }
+    &:hover {
+        background: #fff url('../images/send-trash-over.png') no-repeat center center;
+    }
+}
